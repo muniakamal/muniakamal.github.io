@@ -8,7 +8,6 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
     gap: 20px;
     width: 90%;
     max-width: 1200px;
@@ -95,4 +94,34 @@ body {
 
 .link:hover {
     text-decoration: underline;
+}
+
+/* Navbar Styling */
+
+.navbar {
+    background-color: #3e5e5e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: -1px 3px 13px -3px #304949;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.navbar a {
+    color: #BBE1FA;
+    text-align: center;
+    padding: 10px 60px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: #3e5e5e;
+}
+
+.hidden {
+    display: none;
 }
