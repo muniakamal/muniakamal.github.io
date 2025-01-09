@@ -2,27 +2,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Image data for each hobby
     const hobbyImages = {
         crochet: [
-            '/images/hobbies/img_1894.jpg',
-            '/images/hobbies/img_1897.jpg',
-            '/images/hobbies/img_1898.jpg',
-            '/images/hobbies/img_1900.jpg',
-            '/images/hobbies/img_1904.jpg',
-            '/images/hobbies/img_1918.jpg'
+            '/images/hobbies/IMG_1894.jpg',
+            '/images/hobbies/IMG_1897.jpg',
+            '/images/hobbies/IMG_1898.jpg',
+            '/images/hobbies/IMG_1900.jpg',
+            '/images/hobbies/IMG_1904.jpg',
+            '/images/hobbies/IMG_1918.jpg'
         ],
         needlefelt: [
-            '/images/hobbies/img_0037.jpg',
-            '/images/hobbies/img_0039.jpg',
-            '/images/hobbies/img_1901.jpg',
-            '/images/hobbies/img_1902.jpg',
-            '/images/hobbies/img_7663.jpg',
-            '/images/hobbies/img_7664.jpg'
+            '/images/hobbies/IMG_0037.jpg',
+            '/images/hobbies/IMG_0039.jpg',
+            '/images/hobbies/IMG_1901.jpg',
+            '/images/hobbies/IMG_1902.jpg',
+            '/images/hobbies/IMG_7663.jpg',
+            '/images/hobbies/IMG_7664.jpg'
         ],
         drawing: [
             '/images/hobbies/mountains.jpg',
-            '/images/hobbies/img_1545.jpg',
-            '/images/hobbies/img_1581.jpg',
-            '/images/hobbies/img_4401.jpg',
-            '/images/hobbies/img_6579.jpg'
+            '/images/hobbies/IMG_1545.jpg',
+            '/images/hobbies/IMG_1581.jpg',
+            '/images/hobbies/IMG_4401.jpg',
+            '/images/hobbies/IMG_6579.jpg'
         ]
     };
 
