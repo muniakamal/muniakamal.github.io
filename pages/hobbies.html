@@ -10,6 +10,7 @@
 
     <!-- External JavaScript -->
     <script src="/main.js"></script>
+    <script src="/js/hobbies.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -17,13 +18,48 @@
         <nav id="navbar"></nav>
     </header>
 
-
     <main>
         <div class="container">
-        
+            <h1 class="page-title">Hobbies</h1>
+            
+            <div class="hobbies-grid">
+                <!-- Crochet Section -->
+                <div class="hobby-section">
+                    <h2>Crochet</h2>
+                    <div class="carousel">
+                        <div class="carousel-inner" id="crochet-carousel">
+                            <!-- Images will be inserted by JavaScript -->
+                        </div>
+                        <button class="carousel-control prev" data-carousel="crochet">&lt;</button>
+                        <button class="carousel-control next" data-carousel="crochet">&gt;</button>
+                    </div>
+                </div>
 
+                <!-- Needle Felt Section -->
+                <div class="hobby-section">
+                    <h2>Needle Felt</h2>
+                    <div class="carousel">
+                        <div class="carousel-inner" id="needlefelt-carousel">
+                            <!-- Images will be inserted by JavaScript -->
+                        </div>
+                        <button class="carousel-control prev" data-carousel="needlefelt">&lt;</button>
+                        <button class="carousel-control next" data-carousel="needlefelt">&gt;</button>
+                    </div>
+                </div>
+
+                <!-- Drawing/Painting Section -->
+                <div class="hobby-section">
+                    <h2>Drawing/Painting</h2>
+                    <div class="carousel">
+                        <div class="carousel-inner" id="drawing-carousel">
+                            <!-- Images will be inserted by JavaScript -->
+                        </div>
+                        <button class="carousel-control prev" data-carousel="drawing">&lt;</button>
+                        <button class="carousel-control next" data-carousel="drawing">&gt;</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-
 </body>
 </html>
