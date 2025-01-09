@@ -28,69 +28,47 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         'EGR196': {
             title: 'EGR196 - Engineering Drawings',
-            description: `
-                <ul class="project-bullets">
-                    <li>Mastered AutoCAD for 2D technical drawings and architectural layouts</li>
-                    <li>Created complex 3D models using Autodesk Inventor</li>
-                    <li>Developed parametric designs in Fusion 360</li>
-                    <li>Collaborated on team projects for real-world applications</li>
-                </ul>
-            `,
+            description: 'Introduction to computer-aided drawing with emphasis on two-dimensional sketching, three-dimensional part modeling, assembly construction, component dimensioning, circuit diagram drawing, and shop drawing production',
             images: [
-                {
-                    src: '/images/egr196/simple_floor.jpeg',
-                    caption: 'Following a series of YouTube videos, designed a basic floor plan.'
-                },
-                {
-                    src: '/images/egr196/campus_building.jpeg',
-                    caption: 'Replicate a campus building visually (inaccurate dimensions)'
-                },
-                {
-                    src: '/images/egr196/elevation.jpeg',
-                    caption: 'Design residential hall with accurate dimensions, following housing codes (elevation)'
-                },
-                {
-                    src: '/images/egr196/floor_1.jpeg',
-                    caption: 'Design residential hall with accurate dimensions, following housing codes (floor 1)'
-                },
-                {
-                    src: '/images/egr196/upper_floors.jpeg',
-                    caption: 'Design residential hall with accurate dimensions, following housing codes (upper floors)'
-                }
+                {src: '/images/egr196/simple_floor.jpeg',
+                caption: 'Following a series of YouTube videos, designed a basic floor plan'},
+                {src: '/images/egr196/campus_building.jpeg',
+                caption: 'Replicate a campus building visually (inaccurate dimensions)'},
+                {src: '/images/egr196/elevation.jpeg',
+                caption: 'Design residential hall with accurate dimensions, following housing codes (elevation)'},
+                {src: '/images/egr196/floor_1.jpeg',
+                caption: 'Design residential hall with accurate dimensions, following housing codes (floor 1)'},
+                {src: '/images/egr196/upper_floors.jpeg',
+                caption: 'Design residential hall with accurate dimensions, following housing codes (upper floors)'}
             ],
             showCaption: true
         },
         'EGR295': {
-            title: 'EGR196 - Engineering Drawings',
-            description: `
-                <ul class="project-bullets">
-                    <li>Mastered AutoCAD for 2D technical drawings and architectural layouts</li>
-                    <li>Created complex 3D models using Autodesk Inventor</li>
-                    <li>Developed parametric designs in Fusion 360</li>
-                    <li>Collaborated on team projects for real-world applications</li>
-                </ul>
-            `,
+            title: 'EGR295 - Matlab for Engineers',
+            description: 'A course covering the fundamentals of Matlab. Emphasizes the use of online resources to troubleshoot, debug, and find useful functions. Apply Matlab to solve complex mathematical problems, extract, analyze, filter, plot data, and learn to use control-flow structures.',
             images: [
-                {
-                    src: '/images/egr196/simple_floor.jpeg',
-                    caption: 'Following a series of YouTube videos, designed a basic floor plan.'
-                },
-                {
-                    src: '/images/egr196/campus_building.jpeg',
-                    caption: 'Replicate a campus building visually (inaccurate dimensions)'
-                },
-                {
-                    src: '/images/egr196/elevation.jpeg',
-                    caption: 'Design residential hall with accurate dimensions, following housing codes (elevation)'
-                },
-                {
-                    src: '/images/egr196/floor_1.jpeg',
-                    caption: 'Design residential hall with accurate dimensions, following housing codes (floor 1)'
-                },
-                {
-                    src: '/images/egr196/upper_floors.jpeg',
-                    caption: 'Design residential hall with accurate dimensions, following housing codes (upper floors)'
-                }
+                {src: '/images/egr295/hw4_1.png',
+                caption: 'Create a plot showing hip, knee, and ankle angles during a sprint start as well as a plot of joint power during the movement'},
+                {src: '/images/egr295/hw4_2.png',
+                caption: 'Create a plot showing hip, knee, and ankle angles during a sprint start as well as a plot of joint power during the movement'},
+                {src: '/images/egr295/hw5_1.png',
+                caption: 'Processing and analyzing experimental data using Matlab with polynomial fitting and numerical derivatives and integration'},
+                {src: '/images/egr295/hw5_2.png',
+                caption: 'Processing and analyzing experimental data using Matlab with polynomial fitting and numerical derivatives and integration'},
+                {src: '/images/egr295/hw6.png',
+                caption: 'Using ode45 to analyze the motion of four different projectiles'},
+                {src: '/images/egr295/hw8_1.png',
+                caption: 'Perform a two-sample t-test, paired t-test, bar charts with error bars, and perform a linear regression from given data'},
+                {src: '/images/egr295/hw8_2.png',
+                caption: 'Perform a two-sample t-test, paired t-test, bar charts with error bars, and perform a linear regression from given data'},
+                {src: '/images/egr295/hw9.png',
+                caption: 'Use Simulink to model a damped oscillator with feedback control and explore different parameter effects on system behavior'},
+                {src: '/images/egr295/hw10.png',
+                caption: 'Use Simulink to model a mountain bike suspension system and use Simscape Multibody to explore parameters'},
+                {src: '/images/egr295/hw11.png',
+                caption: 'Use Simscape Multibody to model a mass-spring-damper system with pendulum to explore parameters'},
+                {src: '/images/egr295/final.png',
+                caption: 'Use Simscape and Simulink to model a door closer mechanism and implement powered door enhancement'}
             ],
             showCaption: true
         }
