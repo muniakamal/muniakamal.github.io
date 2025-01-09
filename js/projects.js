@@ -19,11 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 </ul>
             `,
             images: [
-                { src: '/images/car-project/IMG_8201.jpg', caption: 'RC Car Project - View 1' },
-                { src: '/images/car-project/IMG_8509.jpg', caption: 'RC Car Project - View 2' },
-                { src: '/images/car-project/IMG_8526.jpg', caption: 'RC Car Project - View 3' },
-                { src: '/images/car-project/IMG_8527.jpg', caption: 'RC Car Project - View 4' }
-            ]
+                { src: '/images/car-project/IMG_8201.jpg'},
+                { src: '/images/car-project/IMG_8509.jpg'},
+                { src: '/images/car-project/IMG_8526.jpg'},
+                { src: '/images/car-project/IMG_8527.jpg'}
+            ],
+            showCaption: false
         },
         'EGR196': {
             title: 'EGR196 - Engineering Drawings',
@@ -56,7 +57,42 @@ document.addEventListener('DOMContentLoaded', function () {
                     src: '/images/egr196/upper_floors.jpeg',
                     caption: 'Design residential hall with accurate dimensions, following housing codes (upper floors)'
                 }
-            ]
+            ],
+            showCaption: true
+        },
+        'EGR295': {
+            title: 'EGR196 - Engineering Drawings',
+            description: `
+                <ul class="project-bullets">
+                    <li>Mastered AutoCAD for 2D technical drawings and architectural layouts</li>
+                    <li>Created complex 3D models using Autodesk Inventor</li>
+                    <li>Developed parametric designs in Fusion 360</li>
+                    <li>Collaborated on team projects for real-world applications</li>
+                </ul>
+            `,
+            images: [
+                {
+                    src: '/images/egr196/simple_floor.jpeg',
+                    caption: 'Following a series of YouTube videos, designed a basic floor plan.'
+                },
+                {
+                    src: '/images/egr196/campus_building.jpeg',
+                    caption: 'Replicate a campus building visually (inaccurate dimensions)'
+                },
+                {
+                    src: '/images/egr196/elevation.jpeg',
+                    caption: 'Design residential hall with accurate dimensions, following housing codes (elevation)'
+                },
+                {
+                    src: '/images/egr196/floor_1.jpeg',
+                    caption: 'Design residential hall with accurate dimensions, following housing codes (floor 1)'
+                },
+                {
+                    src: '/images/egr196/upper_floors.jpeg',
+                    caption: 'Design residential hall with accurate dimensions, following housing codes (upper floors)'
+                }
+            ],
+            showCaption: true
         }
     };
 
@@ -83,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function createDetailView(project) {
         const detailElement = document.createElement('div');
         detailElement.className = 'project-detail active';
-
+    
         detailElement.innerHTML = `
             <h3>${project.title}</h3>
             <div class="project-content">
@@ -95,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <div class="carousel-item">
                             <div class="image-container">
                                 <img src="${image.src}" alt="Project image ${index + 1}">
-                                <div class="image-caption">${image.caption}</div>
+                                ${project.showCaption && image.caption ? `<div class="image-caption">${image.caption}</div>` : ''}
                             </div>
                         </div>
                     `).join('')}
@@ -110,9 +146,10 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
             <button onclick="window.location.reload()" class="back-button">Back to Projects</button>
         `;
-
+    
         return detailElement;
     }
+    
 
     function initializeCarousel(carousel) {
         let currentSlide = 0;
