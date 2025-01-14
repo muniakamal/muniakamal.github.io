@@ -1,5 +1,5 @@
 // Project details data
-const projectDetails = {
+const involvementDetails = {
     'Hack-A-Thon': {
         title: 'Hack-A-Thon',
         description: 'tbd',
@@ -12,31 +12,50 @@ const projectDetails = {
             { src: '/images/swe/hackathon/IMG_7595.jpg' }
         ],
         showCaption: false
+    },
+    'Conferences': {
+        title: 'Conferences',
+        description: 'tbd',
+        images: [
+            { src: '/images/swe/conferences/IMG_5370.jpg' }
+        ],
+        showCaption: false
+    },
+    'Girl Day': {
+        title: 'Girl Day',
+        description: 'tbd',
+        images: [
+            { src: '/images/swe/girlday/1.jpg' },
+            { src: '/images/swe/girlday/2.jpg' },
+            { src: '/images/swe/girlday/3.jpg' },
+            { src: '/images/swe/girlday/4.jpg' },
+            { src: '/images/swe/girlday/5.jpg' }
+        ],
+        showCaption: false
     }
-    // Add other project details here as needed
 };
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Get all project items
-    const projectItems = document.querySelectorAll('.project-item');
-    const projectList = document.querySelector('.project-list');
+    const involvementItems = document.querySelectorAll('.project-item');
+    const involvementList = document.querySelector('.project-list');
 
-    if (!projectItems.length || !projectList) {
+    if (!involvementItems.length || !involvementList) {
         console.error('Required elements not found');
         return;
     }
 
-    projectItems.forEach(item => {
+    involvementItems.forEach(item => {
         item.addEventListener('click', function() {
             const courseId = this.querySelector('h4').textContent;
-            const projectDetail = projectDetails[courseId];
+            const projectDetail = involvementDetails[courseId];
 
             if (projectDetail) {
-                projectList.style.display = 'none';
+                involvementList.style.display = 'none';
 
                 const detailView = createDetailView(projectDetail);
-                projectList.parentElement.appendChild(detailView);
+                involvementList.parentElement.appendChild(detailView);
 
                 const carousel = detailView.querySelector('.carousel');
                 if (carousel) {
@@ -75,7 +94,7 @@ function createDetailView(project) {
                 `).join('')}
             </div>
         </div>
-        <button onclick="window.location.reload()" class="back-button">Back to Projects</button>
+            <button onclick="window.location.reload()" class="back-button">Back to SWE Involvement</button>
     `;
 
     return detailElement;
